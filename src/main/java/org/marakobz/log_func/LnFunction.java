@@ -1,6 +1,6 @@
 package org.marakobz.log_func;
 
-public class LogFunctions {
+public class LnFunction {
     public static double ln(double x, double epsilon) {
         if (x <= 0) throw new IllegalArgumentException("ln(x) определён только для x > 0");
 
@@ -16,8 +16,5 @@ public class LogFunctions {
         }
         return 2 * sum;
     }
-
-    public static double log(double x, double base, double epsilon) {
-        return ln(x, epsilon) / ln(base, epsilon);
-    }
 }
+
